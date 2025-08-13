@@ -22,7 +22,6 @@ Designed to teach all ages about renewable energy, ocean sustainability, and loc
 
 1. Clone the repository
 git clone https://github.com/YOUR-USERNAME/renewables-quiz.git
-cd renewables-quiz
 
 2. Install dependencies
 pip install streamlit
@@ -32,10 +31,8 @@ streamlit run app.py
 
 ---
 🗂 Project Structure
-.
-├── app.py           # Main Streamlit app
-├── README.md        # Project documentation (this file)
-└── requirements.txt # Python dependencies (optional)
+├── app.py # Main Streamlit app
+├── README.md # Project documentation (this file)
 ---
 🎯 How It Works
 Question Bank
