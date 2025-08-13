@@ -1,4 +1,4 @@
-# Jeannette’s Pier — Easy Renewables Quiz (MCQ + Read Aloud + Encouraging Feedback)
+# Jennette’s Pier — Easy Renewables Quiz (MCQ + Read Aloud + Encouraging Feedback)
 # Designed for Streamlit Community Cloud.
 
 import json
@@ -8,7 +8,7 @@ import streamlit as st
 # -----------------------------
 # Page & sidebar
 # -----------------------------
-st.set_page_config(page_title="Jeannette’s Pier — Easy Renewables Quiz", page_icon="🐢", layout="centered")
+st.set_page_config(page_title="Jennette’s Pier — Easy Renewables Quiz", page_icon="🐢", layout="centered")
 
 st.sidebar.header("Settings")
 READ_ALOUD = st.sidebar.checkbox("Enable read-aloud (Web Speech API)", value=True)
@@ -36,9 +36,9 @@ st.markdown(
 # -----------------------------
 # Header  (FIX: use_container_width instead of use_column_width)
 # -----------------------------
-st.image(image_src, caption="Jeannette’s Pier exhibit banner (alt: ocean scene)", use_container_width=True)
+st.image(image_src, caption="Jennette’s Pier exhibit banner (alt: ocean scene)", use_container_width=True)
 st.markdown(
-    "<div class='header'><h1>Jeannette’s Pier — Easy Renewables Quiz</h1>"
+    "<div class='header'><h1>Jennette’s Pier — Easy Renewables Quiz</h1>"
     "<p class='small'>Multiple choice • Read-aloud • Encouraging feedback</p></div>",
     unsafe_allow_html=True,
 )
