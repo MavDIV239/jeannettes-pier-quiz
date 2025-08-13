@@ -18,7 +18,7 @@ Designed to teach all ages about renewable energy, ocean sustainability, and loc
 
 ---
 
-## 🚀 Getting Started
+🚀 Getting Started
 
 1. Clone the repository
 ```bash
