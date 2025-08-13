@@ -21,7 +21,6 @@ Designed to teach all ages about renewable energy, ocean sustainability, and loc
 🚀 Getting Started
 
 1. Clone the repository
-```bash
 git clone https://github.com/YOUR-USERNAME/renewables-quiz.git
 cd renewables-quiz
 
