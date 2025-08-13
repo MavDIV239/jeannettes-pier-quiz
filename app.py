@@ -15,7 +15,7 @@ READ_ALOUD = st.sidebar.checkbox("Enable read-aloud (Web Speech API)", value=Tru
 NARRATION = st.sidebar.selectbox("Narration style", ["Default", "British documentary"])
 AUTO_LOOP = st.sidebar.checkbox("Auto-restart when finished (kiosk)", value=True)
 
-# Banner image (URL or local file path) — using your requested ocean image by default
+# Banner image (URL or local file path)
 DEFAULT_IMAGE = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAkhVFay0GLD0oveg4nVgUiSS-vPVmY1MJrg&s"
 image_src = st.sidebar.text_input("Banner image (URL or local path)", value=DEFAULT_IMAGE)
 
@@ -34,9 +34,9 @@ st.markdown(
 )
 
 # -----------------------------
-# Header
+# Header  (FIX: use_container_width instead of use_column_width)
 # -----------------------------
-st.image(image_src, caption="Jeannette’s Pier exhibit banner (alt: ocean scene)", use_column_width=True)
+st.image(image_src, caption="Jeannette’s Pier exhibit banner (alt: ocean scene)", use_container_width=True)
 st.markdown(
     "<div class='header'><h1>Jeannette’s Pier — Easy Renewables Quiz</h1>"
     "<p class='small'>Multiple choice • Read-aloud • Encouraging feedback</p></div>",
@@ -83,7 +83,7 @@ def speak(text: str):
     )
 
 # -----------------------------
-# Your EASY question bank (from your last message)
+# EASY question bank
 # -----------------------------
 BANK = [
     {
@@ -314,21 +314,8 @@ if submit and choice_idx is not None:
         st.session_state.idx += 1
         st.rerun()
 
-elif not st.session_state.graded:
-    # Neutral list before grading
-    for j, text in enumerate(q["choices"]):
-        st.markdown(f"- {text}")
-else:
-    # Already graded but not advanced yet — keep showing feedback and a persistent Next
-    choice_idx = st.session_state.last_choice
-    for j, text in enumerate(q["choices"]):
-        klass = "correct" if j == q["answer_idx"] else ("incorrect" if j == choice_idx else "")
-        st.markdown(f"<div class='quiz-option {klass}'><strong>{chr(65+j)}.</strong> {text}</div>", unsafe_allow_html=True)
-    if st.button("Next →", key=f"next_repeat_{i}"):
-        st.session_state.graded = False
-        st.session_state.last_choice = None
-        st.session_state.idx += 1
-        st.rerun()
+# NOTE: removed the "neutral list" that printed bullet points before grading.
+# That list was causing duplicate text under the radio buttons.
 
 # -----------------------------
 # Sidebar scoreboard
