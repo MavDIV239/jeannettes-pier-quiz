@@ -136,11 +136,11 @@ BANK = [
         ],
     },
     {
-        "id": "olympic_surfing",
-        "question": "Which Olympic sport relies on waves of ocean energy?",
+        "id": "wave_surfing",
+        "question": "What sport relies on waves of ocean energy?",
         "choices": ["Surfing", "Swimming", "Rowing", "Sailing"],
-        "answer_idx": 0,
-        "explain": "Surfing is an Olympic sport where athletes ride waves created by ocean energy.",
+        "answer_idx": 0, 
+        "explain": "Surfing is a sport where athletes ride waves created by ocean energy.",
         "rationales": [
             "Correct — surfing depends directly on the motion of ocean waves.",
             "Incorrect — swimming happens in still or pool water, not on waves.",
