@@ -30,21 +30,26 @@ pip install streamlit
 streamlit run app.py
 
 ---
-🗂 Project Structure
+## 📂 Project Structure
+
+
 ├── app.py # Main Streamlit app
 ├── README.md # Project documentation (this file)
 ---
-🎯 How It Works
-Question Bank
 
-Questions are stored in a Python list called BANK inside app.py.
-Each question is a dictionary with:
---**id-unique string indentifier**
---**question-the text shown to the player**
---**choices-list of answer options**
---**answer_idx**-index of the correct choice
---**explain**-short educational explanation
---**rationales-reasons for each possible answer**
+---
+
+## 🎯 How It Works — Question Bank
+
+Questions are stored in a Python list called `BANK` inside `app.py`.  
+Each question is a dictionary with the following keys:
+
+- **`id`** — Unique string identifier  
+- **`question`** — The text shown to the player  
+- **`choices`** — List of answer options  
+- **`answer_idx`** — Index of the correct choice  
+- **`explain`** — Short educational explanation  
+- **`rationales`** — Reasons for each possible answer  
 
 ---
 **Read-Aloud Feature**
