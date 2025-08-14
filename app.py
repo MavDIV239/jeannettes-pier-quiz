@@ -8,7 +8,7 @@ import streamlit as st
 # -----------------------------
 # Page & sidebar
 # -----------------------------
-st.set_page_config(page_title="Jennette’s Pier — Easy Renewables Quiz", page_icon="🐢", layout="centered")
+st.set_page_config(page_title="Jennette’s Pier — Renewables Quiz", page_icon="🐢", layout="centered")
 
 st.sidebar.header("Settings")
 READ_ALOUD = st.sidebar.checkbox("Enable read-aloud (Web Speech API)", value=True)
