@@ -1,4 +1,4 @@
-# Jennette’s Pier — Easy Renewables Quiz (MCQ + Read Aloud + Encouraging Feedback)
+# Jennette’s Pier — Renewables Quiz (MCQ + Read Aloud + Encouraging Feedback)
 # Designed for Streamlit Community Cloud.
 
 import json
