@@ -16,7 +16,7 @@ NARRATION = st.sidebar.selectbox("Narration style", ["Default", "British documen
 AUTO_LOOP = st.sidebar.checkbox("Auto-restart when finished (kiosk)", value=True)
 
 # Banner image (URL or local file path)
-DEFAULT_IMAGE = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAkhVFay0GLD0oveg4nVgUiSS-vPVmY1MJrg&s"
+DEFAULT_IMAGE = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKfnd5SkWSjwlBXfsNy8rPq7v78-y8-SuusQ&s"
 image_src = st.sidebar.text_input("Banner image (URL or local path)", value=DEFAULT_IMAGE)
 
 # Minimal styles
